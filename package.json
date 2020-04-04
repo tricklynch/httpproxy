@@ -2,5 +2,9 @@
   "name": "proxy",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "file:..\\DefinitelyTyped\\types\\node\\",
+    "typescript": "^3.8.3"
+  }
 }
