@@ -1,12 +1,11 @@
 import express from 'express'
+import { join } from 'path'
 
 import { destroyProxy, makeProxy } from './http_proxy'
 
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Hello')
-})
+app.use('/', express.static(join(__dirname, '..', 'public')))
 
 app.post('/proxy', (req, res) => {
     makeProxy()

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hack it Up
+        </title>
+        <script>
+             function startProxy() {
+                fetch('/proxy', { method: 'POST' })
+            }
+
+            function stopProxy() {
+                fetch('/proxy', { method: 'DELETE' })
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Hello
+        </h1>
+        <input type="button" onclick="startProxy()" value="Start" />
+        <input type="button" onclick="stopProxy()" value="Stop" />
+    </body>
+</html>
